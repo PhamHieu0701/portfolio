@@ -26,7 +26,13 @@ export const siteConfig = {
     "Docker",
     "Linux / Nginx",
     "AWS",
-    "Git"
+    "Git",
+    "ChatGPT / Claude",
+    "AI-assisted development",
+    "Prompt / context design",
+    "Task decomposition",
+    "AI-assisted debugging",
+    "AI code review / verification"
   ],
   "projects": [
     {
