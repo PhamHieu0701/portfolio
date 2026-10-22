@@ -20,8 +20,8 @@ const email = "mailto:" + siteConfig.social.email;
     <div class="mx-auto max-w-6xl px-6 md:px-12">
       <header class="flex flex-wrap items-center justify-between gap-6 border-b border-white/15 py-7">
         <a href="#" class="brand" aria-label="Hieu's portfolio home">PH <span>/ ENGINEER</span></a>
-        <nav aria-label="Main navigation" class="flex gap-6 text-xs font-semibold tracking-widest">
-          <a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#contact">CONTACT</a>
+        <nav aria-label="Main navigation" class="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold tracking-widest">
+          <a href="#about">ABOUT</a><a href="#ai-workflow">AI WORKFLOW</a><a href="#work">WORK</a><a href="#contact">CONTACT</a>
         </nav>
       </header>
       <main id="main">
@@ -29,7 +29,7 @@ const email = "mailto:" + siteConfig.social.email;
           <div>
             <p class="eyebrow mb-7">BACKEND ENGINEER · HO CHI MINH CITY, VN</p>
             <h1 id="intro" class="text-5xl font-semibold leading-[1.06] tracking-tight md:text-7xl">Hi, I'm Hieu.<br />I build reliable<br /><span class="accent">backend systems.</span></h1>
-            <p class="mt-8 max-w-xl text-lg leading-relaxed text-[#b6beb3]">6+ years with PHP, real-time systems, and databases. I turn complex workflows into software that people can depend on.</p>
+            <p class="mt-8 max-w-xl text-lg leading-relaxed text-[#b6beb3]">6+ years with PHP, real-time systems, and databases. I turn complex workflows into software that people can depend on, using a structured AI-assisted workflow with hands-on review and testing.</p>
             <div class="mt-9 flex flex-wrap gap-4">
               <a href="#work" class="button-primary">Explore my work <span aria-hidden="true">↘</span></a>
               <a href={email} class="button-secondary">Let's talk <span aria-hidden="true">↗</span></a>
@@ -49,15 +49,28 @@ const email = "mailto:" + siteConfig.social.email;
             <p class="text-xl leading-relaxed text-[#d5dbd0]">{siteConfig.aboutMe}</p>
             <div class="mt-8 grid gap-6 sm:grid-cols-2">
               <div><h3 class="mb-2 font-semibold">Production ownership</h3><p class="muted">Requirements, implementation, SQL tuning, debugging, and verified fixes.</p></div>
-              <div><h3 class="mb-2 font-semibold">AI-assisted. Developer-verified.</h3><p class="muted">ChatGPT and Claude support analysis, design, implementation, and review. I independently verify the results.</p></div>
+              <div><h3 class="mb-2 font-semibold">AI-assisted. Developer-verified.</h3><p class="muted">I work effectively with ChatGPT and Claude: clear context, focused tasks, iterative implementation, and independent code review and testing.</p></div>
             </div>
             <h3 class="eyebrow mb-4 mt-10">TOOLS I WORK WITH</h3>
             <ul class="flex flex-wrap gap-2" aria-label="Technical skills">{siteConfig.skills.map((skill) => <li class="tag">{skill}</li>)}</ul>
           </div>
         </section>
+        <section id="ai-workflow" class="section-grid" aria-labelledby="ai-title">
+          <div><p class="eyebrow">02 / AI WORKFLOW</p><h2 id="ai-title" class="section-title">AI in the loop.<br />Ownership at every step.</h2></div>
+          <div>
+            <p class="text-xl leading-relaxed text-[#d5dbd0]">I use ChatGPT and Claude as practical development partners for understanding codebases, debugging, implementing features, and reviewing changes. I guide the work with clear requirements and stay responsible for the final result.</p>
+            <ul class="mt-6 flex flex-wrap gap-2" aria-label="AI collaboration skills"><li class="tag">ChatGPT</li><li class="tag">Claude</li><li class="tag">Context &amp; prompt design</li><li class="tag">Task decomposition</li><li class="tag">AI-assisted debugging</li><li class="tag">Code review &amp; verification</li></ul>
+            <ol class="mt-8 grid gap-6 sm:grid-cols-2" aria-label="My AI-assisted development process">
+              <li><p class="eyebrow mb-2">01 / DEFINE</p><h3 class="mb-2 font-semibold">Set context and acceptance criteria</h3><p class="muted">Clarify the business goal, inspect the existing code, and break the work into focused tasks with expected outcomes.</p></li>
+              <li><p class="eyebrow mb-2">02 / COLLABORATE</p><h3 class="mb-2 font-semibold">Guide implementation in small steps</h3><p class="muted">Provide relevant context, compare proposed approaches, and iterate on targeted changes with ChatGPT and Claude.</p></li>
+              <li><p class="eyebrow mb-2">03 / VERIFY</p><h3 class="mb-2 font-semibold">Review code and test behavior</h3><p class="muted">Inspect the diff, challenge assumptions, reproduce bugs, and check business logic, edge cases, and regressions.</p></li>
+              <li><p class="eyebrow mb-2">04 / DELIVER</p><h3 class="mb-2 font-semibold">Document and hand over</h3><p class="muted">Summarize the changes and validation, call out remaining limitations, and prepare a clear pull request for review.</p></li>
+            </ol>
+          </div>
+        </section>
         <section id="work" class="border-t border-white/15 py-16 md:py-20" aria-labelledby="work-title">
           <div class="mb-10 flex flex-wrap items-end justify-between gap-5">
-            <div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="work-title" class="section-title">Real projects.<br />Practical engineering.</h2></div>
+            <div><p class="eyebrow">03 / SELECTED WORK</p><h2 id="work-title" class="section-title">Real projects.<br />Practical engineering.</h2></div>
             <p class="max-w-xs text-sm leading-relaxed text-[#b6beb3]">Payment workflows, messaging, CRM, and legacy modernization. My contribution, in context.</p>
           </div>
           <div class="grid gap-4 md:grid-cols-2">
@@ -86,7 +99,7 @@ const email = "mailto:" + siteConfig.social.email;
           </div>
         </section>
         <section id="contact" class="border-t border-white/15 py-16 md:py-24" aria-labelledby="contact-title">
-          <p class="eyebrow">03 / CONTACT</p>
+          <p class="eyebrow">04 / CONTACT</p>
           <h2 id="contact-title" class="my-6 text-4xl font-semibold tracking-tight md:text-6xl">Have a project in mind?<br /><span class="accent">Let's build it well.</span></h2>
           <p class="muted mb-8 max-w-xl">Looking for help with PHP development, API integrations, database optimization, or an existing application? Tell me what you're working on.</p>
           <a href={email} class="contact-email">{siteConfig.social.email} <span aria-hidden="true">↗</span></a>
