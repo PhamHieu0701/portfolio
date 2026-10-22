@@ -1,16 +1,17 @@
 export const siteConfig = {
   "name": "Pham Ly Thanh Hieu",
-  "title": "Backend / Full Stack PHP Developer",
-  "description": "Pham Ly Thanh Hieu — Backend engineer in Ho Chi Minh City. 6+ years building PHP applications, real-time systems, and reliable data workflows.",
+  "title": "Full Stack Developer",
+  "description": "Pham Ly Thanh Hieu — Full Stack Developer in Ho Chi Minh City. 6+ years building PHP applications, real-time systems, and reliable data workflows.",
   "accentColor": "#b5f36d",
   "social": {
     "email": "plthieu0701@gmail.com",
     "linkedin": "https://www.linkedin.com/in/hieu-pham-9b55621a5/",
     "github": "https://github.com/PhamHieu0701"
   },
-  "aboutMe": "I'm a PHP developer based in Ho Chi Minh City with 6+ years of experience turning business requirements into maintainable web applications. My work spans backend services, SQL optimization, real-time messaging, and production troubleshooting. I take ownership from analysis and implementation through testing and review.",
+  "aboutMe": "I'm a Full Stack Developer based in Ho Chi Minh City with 6+ years of experience turning business requirements into maintainable web applications. My work spans backend services, SQL optimization, real-time messaging, and production troubleshooting. I take ownership from analysis and implementation through testing and review.",
   "skills": [
     "PHP",
+    "Node.js",
     "Laravel",
     "Zend Framework 3",
     "CodeIgniter 3/4",
@@ -22,6 +23,8 @@ export const siteConfig = {
     "Queues / Jobs",
     "JavaScript",
     "ExtJS",
+    "React.js",
+    "Vue.js",
     "Tailwind CSS",
     "Docker",
     "Linux / Nginx",
